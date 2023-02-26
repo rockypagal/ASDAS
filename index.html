@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSCIT attendance system</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./accets/New folder/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="style"></div>
+      <div class="enroll" id="enroll">
+        <p class="heading">Enter your enrollment number!</p>
+        <form action="" method="post" id="enrollForm">
+          <div class="info">
+
+
+            <div class="inputSection">
+              <span>Degree Program</span>
+              <input
+                type="text"
+                required
+                id="degree"
+                placeholder="MCA/BCA/MSCIT"
+                class="enrolnum"
+              />
+            </div>
+
+            <div class="inputSection">
+              <span>Sem</span>
+              <input
+                type="number"
+                required
+                id="sem"
+                placeholder="Semester"
+                class="enrolnum"
+              />
+            </div>
+
+            <div class="inputSection">
+              <span>Enroll</span>
+              <input
+                type="number"
+                required
+                id="enrolnum"
+                placeholder="Your Enrollment"
+                class="enrolnum"
+              />
+            </div>
+
+            
+            <button type="submit" id="submit">Continue</button>
+          </div>
+        </form>
+
+        <form action="" method="post" id="matchEnrol">
+          <div class="info">
+            <span>Name:</span>
+            <input type="text" id="stdName" disabled class="stdName" />
+            <span>Enroll:</span>
+            <input type="number" id="stdEnrol" disabled class="stdEnrol" />
+            <span>Code:</span>
+            <input type="number" id="OTP" required class="OTP" />
+          </div>
+          <button type="submit" id="submitOtp">Continue</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- https://docs.google.com/forms/u/0/d/e/1FAIpQLSdDJWKVIF8Wtfw2YWZnV5gVTBxJgE8vAunXBQ002K6RydFUUw/formResponse -->
+<!-- entry.639844031 -->
